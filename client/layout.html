@@ -1,0 +1,17 @@
+<template name="layout">
+
+<header>
+  <h1>Build websites with a Spreadsheet</h1>
+  
+  <nav>
+    {{#each navigation}}
+    <li><a href="/{{handle}}">{{title}}</a></li>
+    {{/each}}
+  </nav>
+</header>
+
+<main>
+{{> yield "content"}}
+</main>
+
+</template>
